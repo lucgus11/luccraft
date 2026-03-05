@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luccraft — Sandbox 2D</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hud-top">
+    <h1>Luccraft</h1>
+    <div class="stats">
+      <span id="timeLabel">Jour 1 · 08:00</span>
+      <span id="biomeLabel">Biome : ?</span>
+      <span id="healthLabel">❤️ 100</span>
+      <span id="hungerLabel">🍗 100</span>
+    </div>
+  </header>
+
+  <main>
+    <canvas id="game" width="1200" height="700"></canvas>
+
+    <aside class="panel" id="inventoryPanel">
+      <h2>Inventaire</h2>
+      <div id="inventoryList" class="list"></div>
+      <h3>Artisanat</h3>
+      <div id="recipesList" class="list"></div>
+      <p class="hint">Touches : ZQSD déplacer · Espace/Z sauter · Casser : clic gauche · Placer : clic droit · Inventaire : I · Sauvegarde : K · Charger : L</p>
+    </aside>
+  </main>
+
+  <footer class="hud-bottom">
+    <label>Bloc sélectionné:
+      <select id="blockSelect"></select>
+    </label>
+    <button id="newWorldBtn">Nouveau monde</button>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
