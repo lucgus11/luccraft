@@ -30,3 +30,13 @@ Puis ouvrir `http://localhost:8000`.
 - `K` : sauvegarder
 - `L` : charger
 - `R` : recommencer après une défaite
+
+## Résolution des conflits de demande d'extraction (PR)
+Si une demande d'extraction introduit un conflit, vérifie rapidement le dépôt avec :
+
+```bash
+./scripts/check_conflits_extraction.sh
+```
+
+Le script échoue si des marqueurs `<<<<<<<`, `=======`, `>>>>>>>` existent encore dans les fichiers.
+
